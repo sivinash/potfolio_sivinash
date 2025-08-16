@@ -6,6 +6,27 @@
 .fade-in {
   animation: fadeIn 1s ease-in;
 }
+.hamburger-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #4f46e5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.hamburger-btn img{
+  border: thick solid white;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: thin solid white;
+  object-fit: cover;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -42,6 +63,8 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
     background-color: #001d39;
   }
 
@@ -252,6 +275,9 @@ footer {
   .headdining1 {
     font-size: 1.5rem;
     margin-bottom: 2%;
+  }
+  .hamburger-btn{
+    display: none;
   }
   #home {
     background-color: #001d39;
