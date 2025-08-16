@@ -17,7 +17,7 @@
 }
 header {
   position: fixed;
-  background-color: #001d39;
+  background-color: red;
   width: 100%;
   display: flex;
   padding: 2%;
