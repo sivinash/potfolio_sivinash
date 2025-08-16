@@ -1,23 +1,16 @@
-*{
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
-body img,video{
-  display: none;
-  
-}
-#skills img,video{
-  display: none;
-  
-}
+
+
 header,
 main,
-footer{
+footer {
   width: 100%;
   background-color: aquamarine;
 }
-
 header {
   position: fixed;
   display: flex;
@@ -30,15 +23,27 @@ header h1 {
   color: white;
   font-size: 2.4rem;
   width: auto;
-  background-color: red;
 }
 nav {
   display: flex;
   width: 80%;
-  background-color: aqua;
   justify-content: right;
-  gap: 5%;
+  gap: 1%;
   padding-top: 1%;
+}
+nav a {
+  color: white;
+  width: 10%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-style: normal;
+}
+nav a:hover {
+  color: black;
+  font-size: 1.6rem;
+  text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
+  -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
 }
 #home,
 #about,
@@ -49,26 +54,30 @@ nav {
   padding: 2%;
   padding-top: 8%;
 }
-.container2{
+.container2 {
   width: 100%;
   background-color: red;
 }
-@media only screen and (max-width: 600px)   {
+
+@media only screen and (max-width: 600px) {
+  #home {
+    background-color: #001d39;
+  }
   nav {
     display: none;
-  } 
-  .containerhome{
+  }
+
+  .containerhome {
     padding-top: 10%;
     width: 100%;
     display: block;
     align-items: center;
     gap: 10%;
   }
-  .homecontainerimg{
+  .homecontainerimg {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: blue;
   }
   .homecontainerimg img {
     display: block;
@@ -78,13 +87,13 @@ nav {
     height: 10rem;
     object-fit: cover;
   }
-  .homecontainerself{
+  .homecontainerself {
     width: 100%;
-    background-color: pink;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    color: white;
     font-size: 0.8rem;
   }
   .homecontainerself p {
@@ -96,19 +105,54 @@ nav {
     font-weight: bold;
     margin-bottom: 3%;
   }
-  
+  #contbutton {
+    padding: 2%;
+    background-color: white;
+    color: rgb(14, 1, 14);
+    font-weight: bold;
+    border-radius: 14px;
+    text-decoration: none;
+  }
+  #contbutton:hover {
+    background-color: transparent;
+    color: white;
+    box-shadow: 0px 0px 2px 2px white;
+  }
+  #download {
+    padding: 2%;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border-radius: 14px;
+    box-shadow: 0px 0px 2px 2px white;
+    text-decoration: none;
+  }
+  #download:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+  }
+  .containergrid{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+
+  }
 }
 @media only screen and (min-width: 600px) {
-  .containerhome{
+  #home {
+    background-color: #001d39;
+  }
+  .containerhome {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 10%;
   }
-  .homecontainerimg{
+  .homecontainerimg {
     width: 35%;
-    background-color: blue;
   }
   .homecontainerimg img {
     display: block;
@@ -118,12 +162,12 @@ nav {
     height: 25rem;
     object-fit: cover;
   }
-  .homecontainerself{
+  .homecontainerself {
     width: 65%;
-    background-color: pink;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
     justify-content: space-between;
     font-size: 1.5rem;
   }
@@ -136,4 +180,138 @@ nav {
     font-weight: bold;
     margin-bottom: 3%;
   }
+  #contbutton {
+    padding: 3%;
+    background-color: white;
+    color: rgb(14, 1, 14);
+    font-weight: bold;
+    border-radius: 14px;
+    text-decoration: none;
+  }
+  #contbutton:hover {
+    background-color: transparent;
+    color: white;
+    box-shadow: 0px 0px 2px 2px white;
+  }
+  #download {
+    padding: 3%;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border-radius: 14px;
+    box-shadow: 0px 0px 2px 2px white;
+    text-decoration: none;
+  }
+  #download:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+  }
+  .container {
+    width: 100%;
+    padding-left: 0%;
+    margin-bottom: 10%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    gap: 5%;
+  }
+  .containergrid {
+    width: 100%;
+    padding:0%;
+    margin-bottom: 10%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    gap: 5%;
+  }
+  
+}
+.headdining {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+.singleproject {
+  background-color: rgb(237, 229, 245);
+  padding: 2%;
+  border-radius: 5%;
+}
+.singleprojectdiv {
+  display: flex;
+  justify-content: space-between;
+}
+.singleproject img {
+  width: 100%;
+  max-height: 320rem;
+  border-radius: 25px;
+}
+.singleproject video {
+  width: 100%;
+  height: 50%;
+  border-radius: 25px;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  gap: 3%;
+  padding: 2rem 0rem;
+}
+.skill-item {
+  text-align: center;
+}
+.skill-item img {
+  width: 40%;
+  height: 55%;
+  transition: transform 0.3s ease;
+}
+.skill-item img:hover {
+  transform: scale(1.2);
+}
+.skill-item p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.certification,
+.educationdetails {
+  margin-bottom: 4%;
+  padding-left: 3%;
+  border-left: thick solid rgb(214, 9, 214);
+}
+.educationdetails h4,
+p {
+  margin-bottom: 2%;
+}
+.certification-item {
+  display: flex;
+  justify-content: space-between;
+}
+.certification-item button {
+  border: none;
+  background-color: transparent;
+}
+.contact-item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0%;
+}
+
+.contact-item p {
+  width: 30%;
+  font-size: 1.5rem;
+  text-align: left;
+}
+.contact-item h3 {
+  width: 20%;
+  font-size: 1.5rem;
+  text-align: left;
+}
+.contact-icon {
+  width: 30%;
+  font-size: 2rem;
+  text-align: right;
+  padding-right: 7%;
 }
