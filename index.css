@@ -3,13 +3,10 @@
   padding: 0%;
   box-sizing: border-box;
 }
-
-
 header,
 main,
 footer {
   width: 100%;
-  background-color: aquamarine;
 }
 header {
   position: fixed;
@@ -19,11 +16,7 @@ header {
   padding: 2%;
   background-color: #001d39;
 }
-header h1 {
-  color: white;
-  font-size: 2.4rem;
-  width: auto;
-}
+
 nav {
   display: flex;
   width: 80%;
@@ -43,7 +36,7 @@ nav a:hover {
   color: black;
   font-size: 1.6rem;
   text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
-  -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
+    -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
 }
 #home,
 #about,
@@ -56,10 +49,14 @@ nav a:hover {
 }
 .container2 {
   width: 100%;
-  background-color: red;
 }
 
 @media only screen and (max-width: 600px) {
+  header h1 {
+    color: white;
+    font-size: 1.4rem;
+    width: auto;
+  }
   #home {
     background-color: #001d39;
   }
@@ -82,6 +79,7 @@ nav a:hover {
   .homecontainerimg img {
     display: block;
     border-radius: 50%;
+    margin-bottom: 7%;
     border: thick solid white;
     width: 40%;
     height: 10rem;
@@ -95,13 +93,14 @@ nav a:hover {
     justify-content: space-between;
     color: white;
     font-size: 0.8rem;
+    margin-bottom: 5%;
   }
   .homecontainerself p {
-    font-size: 1.5rem;
-    margin-bottom: 0.6%;
+    font-size: 0.8rem;
+    margin-bottom: 1%;
   }
   .homecontainerself h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 3%;
   }
@@ -110,7 +109,7 @@ nav a:hover {
     background-color: white;
     color: rgb(14, 1, 14);
     font-weight: bold;
-    border-radius: 14px;
+    border-radius: 10px;
     text-decoration: none;
   }
   #contbutton:hover {
@@ -123,7 +122,7 @@ nav a:hover {
     background-color: transparent;
     color: white;
     font-weight: bold;
-    border-radius: 14px;
+    border-radius: 10px;
     box-shadow: 0px 0px 2px 2px white;
     text-decoration: none;
   }
@@ -131,18 +130,91 @@ nav a:hover {
     background-color: white;
     color: rgb(0, 0, 0);
   }
-  .containergrid{
+  .containergrid {
     padding: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 50px;
+  }
+  .headdining {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+  }
+  .headdining1 {
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
+  .aboutparagrap {
+    font-size: 0.7rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .aboutparagrap2 {
+    font-size: 0.7rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .certification,
+  .educationdetails {
+    font-size: 0.7rem;
+    margin-bottom: 4%;
+    padding-left: 3%;
+    border-left: thick solid rgb(214, 9, 214);
+  }
+  .educationdetails h4,
+  p {
+    margin-bottom: 2%;
+  }
+  .certification-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  .certification-item button {
+    border: none;
+    background-color: transparent;
+  }
+  .contact-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
+  .contact-item p {
+    width: 30%;
+    font-size: 0.7rem;
+    text-align: left;
+  }
+  .contact-item h3 {
+    width: 20%;
+    font-size: 0.7rem;
+    text-align: left;
+  }
+  .contact-icon {
+    width: 10%;
+    font-size: 0.7rem;
+    text-align: right;
+    padding-right: 7%;
   }
 }
 @media only screen and (min-width: 600px) {
+  header h1 {
+    color: white;
+    font-size: 2.4rem;
+    width: auto;
+  }
+  .headdining1 {
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
   #home {
     background-color: #001d39;
+  }
+  .aboutparagrap2 {
+    font-size: 1.4rem;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .containerhome {
     width: 100%;
@@ -218,7 +290,7 @@ nav a:hover {
   }
   .containergrid {
     width: 100%;
-    padding:0%;
+    padding: 0%;
     margin-bottom: 10%;
     height: auto;
     display: grid;
@@ -226,13 +298,58 @@ nav a:hover {
     grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
     gap: 5%;
   }
-  
+  .headdining {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+  }
+  .certification,
+  .educationdetails {
+    margin-bottom: 4%;
+    padding-left: 3%;
+    border-left: thick solid rgb(214, 9, 214);
+  }
+  .educationdetails h4,
+  p {
+    margin-bottom: 2%;
+  }
+  .certification-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  .certification-item button {
+    border: none;
+    background-color: transparent;
+  }
+  .aboutparagrap {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .contact-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0%;
+  }
+
+  .contact-item p {
+    width: 30%;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .contact-item h3 {
+    width: 20%;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .contact-icon {
+    width: 30%;
+    font-size: 2rem;
+    text-align: right;
+    padding-right: 7%;
+  }
 }
-.headdining {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 2%;
-}
+
 .singleproject {
   background-color: rgb(237, 229, 245);
   padding: 2%;
@@ -274,44 +391,5 @@ nav a:hover {
   font-size: 0.95rem;
   font-weight: 500;
 }
-.certification,
-.educationdetails {
-  margin-bottom: 4%;
-  padding-left: 3%;
-  border-left: thick solid rgb(214, 9, 214);
-}
-.educationdetails h4,
-p {
-  margin-bottom: 2%;
-}
-.certification-item {
-  display: flex;
-  justify-content: space-between;
-}
-.certification-item button {
-  border: none;
-  background-color: transparent;
-}
-.contact-item {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 0%;
-}
 
-.contact-item p {
-  width: 30%;
-  font-size: 1.5rem;
-  text-align: left;
-}
-.contact-item h3 {
-  width: 20%;
-  font-size: 1.5rem;
-  text-align: left;
-}
-.contact-icon {
-  width: 30%;
-  font-size: 2rem;
-  text-align: right;
-  padding-right: 7%;
-}
+
