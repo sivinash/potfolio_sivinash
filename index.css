@@ -193,21 +193,22 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 6%;
   }
 
   .contact-item p {
     width: 30%;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-align: left;
   }
   .contact-item h3 {
-    width: 20%;
-    font-size: 0.7rem;
+    width: 30%;
+    font-size: 0.8rem;
     text-align: left;
   }
   .contact-icon {
     width: 10%;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-align: right;
     padding-right: 7%;
   }
