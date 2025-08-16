@@ -6,113 +6,10 @@
     <title>sivinash</title>
     <link rel="icon" type="image/png" href="img/logo.jpeg">
     <style>
-        body{
-            background-color:white;
-            padding: 0px;
-            margin: 0px;
-            overflow-y: scroll;
-            scrollbar-width: 0px;
-        }
-        .navigation{
-            position: fixed;
-            background-color:#001D39;
-            color: white;
-            width: 100%;
-            font-size: 20px;
-        }
-        .navigation a{
-            color: white;
-            text-decoration: none;
-            font-style: normal;
-            width: 80px;
-            font-size: 20px;
-            padding: 10px;
-        }
-        .navigation a:hover{
-            color:black;
-            font-size: 30px;
-            width: 100px;
-            padding: 0px;
-            text-shadow: -1px -1px 0 whitesmoke,1px -1px 0 whitesmoke,-1px 1px 0 whitesmoke,1px 1px 0 whitesmoke;
-        }
-        .container{
-            margin: 20px;
-            padding-top: 10px;
-            padding-bottom: 10px;          
-        }
-        .homesection{
-            padding-top:150px;
-            color: white;
-            background-color:#001D39;
-            margin-bottom: 60px;
-        }
-        .homesection2{
-            padding-top: 120px;
-            padding-bottom: 22px;
-            color: rgb(0, 0, 0);
-        }
-        .container2{
-            margin-left:50px;
-            margin-right: auto;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-        .skills-grid{
-            display: grid;
-            grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
-            gap: 30px;
-            padding: 2rem 0;
-        }
-        .projectdiv{
-            display: grid;
-            grid-template-columns: repeat(auto-fill,minmax(40%,1fr));
-            gap: 20px;
-            padding-left: 40px;
-            
-        }
-       .singleproject{
-            background-color: rgb(237, 229, 245);
-            padding: 10px;
-            font-size: 15px;
-            width: 80%;
-            height: 600px;
-            padding-bottom: 20px;
-            border-radius: 25px;
-       }
-        .singleprojectdiv{
-            display: flex;
-            justify-content: space-between;
-            width:90%;
-            border-radius: 25px;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-        .singleproject img{
-            width: 100%;
-            height: 60%;
-            border-radius: 25px;
-        }
-        .singleproject video{
-            width: 100%;
-            height: 50%;
-            border-radius: 25px;
-        }
-        .skill-item{
-            text-align: center;
-        }
-        .skill-item img{
-            width: 60px;
-            height: 60px;
-            transition: transform 0.3s ease;
-        }
-        .skill-item img:hover{
-            transform: scale(1.2);
-        }
-        .skill-item p{
-            margin-top: 0.5rem;
-            font-size: 0.95rem;
-            font-weight: 500;
+
+        *{
+            margin: 0;
+            box-sizing: border-box;
         }
         .fade-in{
             animation: fadeIn 1s ease-in;
@@ -127,44 +24,189 @@
                 transform: translateY(0);
             }
         }
-        .certification{
-            padding-left: 30px;
-            padding-right: 20px;
-            border-left: thick solid rgb(214, 9, 214)
-        }
-        .certification-item{
+        header{
+            position: fixed;
+            background-color:#001D39;
+            width: 100%;
+            height: 17%;
             display: flex;
-            justify-content: space-between;
+            padding: 2%;
+            z-index: 1000;
+           
         }
-        .certification-item button{
-            border: none;
-            background-color: transparent;
+        header h1{
+            width: 50%;
+            color: white;
+            font-size: 2.4rem;
         }
-        .contact-item {
-            width:70%;
-            margin-left: 22%;
+        #home{
+            width: 100%;
+            padding: 2%;
+            padding-top: 8%;
+            color: white;
+            background-color:#001D39;
+        }  
+        #about,#skills,#projects,#Contact{
+            width: 100%;
+            padding: 2%;
+            padding-top: 8%;
+        } 
+        @media only screen and (max-width: 600px){
+            nav{
+                display: none;
+            }
+           .container2{
+                width: 100%;
+                display: block;
+                flex-direction: row-reverse;
+                align-items: center;
+                gap: 10%;
+            }
+            .container2div{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 1.0rem;
+                
+           }
+            .container2div p{
+                font-size: 1.5rem;
+                margin-bottom: 0.3%;
+    
+            }
+            .container2div h1{
+                font-size: 3rem;
+                font-weight: bold;
+                margin-bottom:3% ;
+            }
+            .container2div1{
+                margin-left: 33%;
+                margin-bottom: 4%;
+                width: 35%;
+                display: flex;
+                justify-content: center;
+            }
+            .container2div1 img{
+                border-radius: 50%;
+                border: thick solid white;
+                width: 50%;
+                height: 15rem;
+                object-fit: cover;
+            }
+            .container{    
+                width: 100%;
+                padding-left: 0%;
+                margin-bottom: 10%;
+                height:auto;
+                display: grid;
+                justify-content: center;
+                grid-template-columns: repeat(auto-fill,minmax(550px,1fr));
+                gap: 5%;
+            }
+            #contbutton{
+                padding: 2%;
+                background-color: white; 
+                color:rgb(14, 1, 14);
+                font-weight: bold; 
+                border-radius: 14px;
+                text-decoration: none;
+            }
+            #contbutton:hover{
+                background-color: transparent;
+                color:white;
+                box-shadow: 0px 0px  2px 2px white;
+            }
+            #download{
+                padding: 2%;
+                background-color: transparent; 
+                color:white;
+                font-weight: bold; 
+                border-radius: 14px;
+                box-shadow: 0px 0px  2px 2px white;
+                text-decoration: none;
+            }
+            #download:hover{
+                background-color: white;
+                color:rgb(0, 0, 0);
+            }
+        }
+        @media only screen and (min-width: 600px){
+        nav{
+            width: 50%;
             display: flex;
-            font-size:25px;
-            color: whitesmoke;
-            justify-content: left;
-            gap: 40px;
-            align-items: left;
-            border-radius: 8px;
-            cursor: pointer;
+            text-align: center;
+            gap: 3%;
+            padding-top: 1%;
         }
-        .contact-item h3{
-            width: 300px;
-            text-align: left;
+        nav a{
+            color: white;
+            width: 25%;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1rem;
+            font-style: normal;
+        }
+        nav a:hover{
+            color:black;
+            font-size: 1.3rem;
+            text-shadow: -1px -1px 0 whitesmoke,1px -1px 0 whitesmoke,-1px 1px 0 whitesmoke,1px 1px 0 whitesmoke;
+        }
+        .mobile{
+            display: none;
+        }   
+        .container2{
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 10%;
+        }
+        .container{    
+            width: 100%;
+            padding-left: 0%;                
+            margin-bottom: 10%;
+            height:auto;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fill,minmax(550px,1fr));
+            gap: 5%;
         }
         
-        .contact-icon {
-            padding: 10px;
-            font-size: 24px;
-            color: #4facfe;
-            min-width: 50px;
+        .container2div{
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.5rem;
+    
+        }
+        .container2div p{
+            font-size: 1.5rem;
+            margin-bottom: 0.6%;
+    
+        }
+        .container2div h1{
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom:3% ;
+        }
+        .container2div1{
+            width: 35%;
+            display: flex;
+            justify-content: center;
+        }
+        .container2div1 img{
+            border-radius: 50%;
+            border: thick solid white;
+            width:100%;
+            height: 25rem;
+            object-fit: cover;
         }
         #contbutton{
-            padding: 20px;
+            padding: 3%;
             background-color: white; 
             color:rgb(14, 1, 14);
             font-weight: bold; 
@@ -177,7 +219,7 @@
             box-shadow: 0px 0px  2px 2px white;
         }
         #download{
-            padding: 20px;
+            padding: 3%;
             background-color: transparent; 
             color:white;
             font-weight: bold; 
@@ -188,6 +230,106 @@
         #download:hover{
             background-color: white;
             color:rgb(0, 0, 0);
+        }
+       
+     }
+      .headdining{
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 2%
+        }  
+        .skill-item{
+            text-align: center;
+        }
+        .skill-item img{
+            width: 40%;
+            height: 55%;
+            transition: transform 0.3s ease;
+        }
+        .skill-item img:hover{
+            transform: scale(1.2);
+        }
+        .skill-item p{
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        .skills-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(20%,1fr));
+            gap: 3%;
+            padding: 2rem 0rem;
+        }
+        .certification,.educationdetails{
+            margin-bottom:4% ;
+            padding-left: 3%;
+            border-left: thick solid rgb(214, 9, 214);
+        }
+        .educationdetails h4,p{
+            margin-bottom: 2%;}
+        .certification-item{
+            display: flex;
+            justify-content: space-between;
+        }
+        .certification-item button{
+            border: none;
+            background-color: transparent;
+        }
+        .containergrid{    
+            width: 100%;
+            padding-left: 6%;
+            margin-bottom: 10%;
+            height:auto;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fill,minmax(550px,1fr));
+            gap: 5%;
+        }
+        .singleproject{
+            position:relative;
+            background-color: rgb(237, 229, 245);
+            padding: 2%;
+            border-radius: 5%
+       }
+        .singleprojectdiv{
+            display: flex;
+            justify-content: space-between;
+        }
+        .singleproject img {
+            width: 100%;
+            max-height: 320rem;
+            border-radius: 25px;
+        }
+        .singleproject video{
+            width: 100%;
+            height: 50%;
+            border-radius: 25px;
+        }
+        .contact-item {
+            width:100%;
+            display: flex;
+            justify-content: center;
+            gap: 0%;
+        }
+        
+        .contact-item p{
+            width: 30%;
+            font-size: 1.5rem;
+            text-align: left;
+
+        }
+        .contact-item h3
+        {
+            width: 20%;
+            font-size: 1.5rem;
+            text-align: left;
+
+        }
+        .contact-icon{
+            width: 30%;
+            font-size: 2rem;
+            text-align: right;
+            padding-right: 7%;
         }
         .proof{
             color: red;
@@ -208,70 +350,62 @@
         .cp a:hover{
             color:red;
             }
-    </style>    
+    </style>
 </head>
 <body class="fade-in" >
-    <header>
-        <nav class="navigation">
-            <div class="container">
-                <div style="display: flex;justify-content:left; width: 100%;">
-                    <div style="width: 50%; font-size: 30px;font-weight: bold; padding-left: 30px;">SIVINASH N</div>
-                    <div style="display: flex;gap: 30px; width: 45%;">
-                        <a href="#home" onclick="fadeinchange('home')" >Home</a>
-                        <a href="#about" onclick="fadeinchange('about')" >About</a>
-                        <a href="#skills" onclick="fadeinchange('skills')" >Skills</a>
-                        <a href="#projects" onclick="fadeinchange('projects')">Projects</a>                    
-                        <a href="#Contact" >Contact</a>
-                    </div> 
-                </div>
-            </div>
+    <header >
+        <h1>SIVINASH N</h1>
+        <nav>
+            <a href="#home" onclick="fadeinchange('home')" >Home</a>
+            <a href="#about" onclick="fadeinchange('about')" >About</a>                        
+            <a href="#skills" onclick="fadeinchange('skills')" >Skills</a>
+            <a href="#projects" onclick="fadeinchange('projects')">Projects</a>                    
+            <a href="#Contact"  >Contact</a>
         </nav>
     </header>
     <main>
-        <section id="home" class="homesection" >
+        <section id="home" >
             <div class="container2">
-                <div style="margin: auto;display: flex;flex-direction: column;align-items: center;height: 430px;">
-                    <h1  style="font-size: 40px;font-weight: bold;">Hi, I'm Sivinash N</h1>
-                    <p style="font-size: x-large;margin-bottom: 0px;">A passionate fresh Computer Application(bca) graduate,</p>
-                    <p style="font-size: x-large;margin-bottom: 0px;">an enthusiastic tech learner and a growing software engineer </p>
-                    <p style="font-size: x-large;margin-bottom: 20px;">and full-stack development.</p>
-                    <div style="display: flex;justify-content: space-between;width: 340px;" >
+                <div class="container2div1" >
+                    <img src="img/sivi.jpeg" alt="Portrait of Sivinash N"/>
+                </div>
+                <div class="container2div">
+                    <h1  >Hi, I'm Sivinash N</h1>
+                    <p >A passionate fresh Computer Application(bca) graduate,</p>
+                    <p >an enthusiastic tech learner and a growing software engineer </p>
+                    <p >and full-stack development.</p>
+                    <div  style="margin-top: 4%;width: 100%;display: flex;justify-content: center;gap: 3%;">
                         <a id="contbutton" href="#Contact" >Contact Me</a>
                         <a id="download" href="sivinas N.pdf" >Download CV</a>
                     </div>
                 </div>
-                <div style="width: 40%;display: flex;justify-content: center;">
-                    <div style="width: 400px;height: 430px;" >
-                        <img src="img/sivi.jpeg" alt="Portrait of John Doe, a young professional wearing business casual attire smiling confidently" style="border-radius: 50%;border: thick solid white;width: 400px;height: 400px;object-fit: cover;;"/>
-                    </div>
-                </div>
             </div>
         </section>
-        <section id="about" class="homesection2" >
+        <section id="about" >
             <div class="container2" style="display: block;">
-                <h2 style="font-size: 35px;font-weight: bold;margin-bottom: 20px;">About Me</h2>
-                <div style="display: flex;flex-direction: row;gap: 15px;" >
-                    <div style="width: 50%;">
+                <h2 class="headdining">About Me</h2>
+                <div class="container" >
+                    <div class="aboutdiv">
                         <p style="color: rgb(139, 135, 135);margin-bottom: 4%;line-height: 1.8;">I recently graduated with a Bachelor's degree in Computer Science from Patrician College of Arts and Science,which is affiliated with The University of Madras. Throughout my academic journey, I've developed a strong foundation in programming principles and development methodologies.</p>
                         <p style="color: rgb(139, 135, 135);margin-bottom: 4%;line-height: 1.8;">My coursework included basic topics in web development, database management, and software engineering.</p>
                         <p style="color: rgb(139, 135, 135);line-height: 1.8;">As technology continues to evolve, I'm committed to lifelong learning and staying current with industry trends. My goal is to contribute my fresh perspective and energy to innovative projects.</p>
                     </div>
-                    <div style="width: 50%;">
+                    <div class="aboutdiv">
                         <div style="background-color: rgb(207, 207, 207);padding: 4%;">
-                            <h3 style="font-size: 25px;font-weight: bold;margin-bottom: 20px;" >Education</h3>
-                            <div style="margin-bottom:20px ;margin-left: 4px;padding-left: 15px; border-left: thick solid rgb(214, 9, 214);line-height: 15px;">
-                                <h4 style="font-weight: bold;">The University of Madras</h4>
-                                <p style="width: 100%;">St.Patrician College of Arts and Science,Adayar<b style="padding-left: 30px;">BCA</b><i style="padding-left: 30px;">73.43%</i></p> 
+                            <h3 style="font-size: 2rem;font-weight: bold;margin-bottom: 3%;" >Education</h3>
+                            <div class="educationdetails">
+                                <h4 >The University of Madras</h4>
+                                <p style="width: 100%;">St.Patrician College of Arts and Science,Adayar<b style="padding-left: 4%;">BCA</b><i style="padding-left: 4%;">73.43%</i></p> 
                                 <p >2022-2025</p>
                             </div>
-                            <div style="margin-bottom:20px ;margin-left: 4px;padding-left: 15px; border-left: thick solid rgb(214, 9, 214);line-height: 15px;">
-                                <h4 style="font-weight: bold;">12Th GRADE</h4>
-                                <p style="width: 100%;">St.Peter's Hr Sec School,Royapuram<i style="padding-left: 200px;">77%</i></p> 
+                            <div class="educationdetails">
+                                <h4 >12Th GRADE</h4>
+                                <p style="width: 100%;">St.Peter's Hr Sec School,Royapuram<i style="padding-left: 33%;">77%</i></p> 
                                 <p >2022</p>
                             </div>
-                            <div style="margin-bottom:20px ;margin-left: 4px;padding-left: 15px; border-left: thick solid rgb(214, 9, 214);line-height: 15px;">
-                                <h4 style="font-weight: bold;">10Th GRADE</h4>
-                                <p style="width: 100%;">St.Peter's Hr Sec School,Royapuram<i style="padding-left: 200px;">64%</i></p>
+                            <div class="educationdetails">
+                                <h4 >10Th GRADE</h4>
+                                <p style="width: 100%;">St.Peter's Hr Sec School,Royapuram<i style="padding-left: 33%;">64%</i></p>
                                 <p >2020</p>
                             </div>
                         </div>
@@ -279,132 +413,128 @@
                 </div>
             </div>
         </section>
-        <section id="skills" class="homesection2" >
-            <div class="container2" style="display: block;">
-                <div  style="display: flex;gap: 15px;">               
-                    <div style="padding: 10px; width: 50%;">
-                        <h2 style="font-size: 26px;font-weight: bold;margin-bottom: 20px;">Skills</h2>
-                        <div class="skills-grid" style="width: 100%;">
-                            <div class="skill-item">
-                                <img src="img/python.jpeg" alt="python"/>
-                                <p>python</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="img/flask.png" alt="Flask"/>
-                                <p>Flask</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="img/java.png" alt="java"/>
-                                <p>java</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="img/react.png" alt="Reactjs"/>
-                                <p>Reactjs</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="img/cpp.png" alt="c++"/>
-                                <p>c++</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="img/html.png" alt="Html"/>
-                                <p>Html</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="img/javascript.png" alt="JS"/>
-                                <p>JS</p>
-                            </div>
-                             <div class="skill-item">
-                                <img src="img/css.png" alt="css"/>
-                                <p>css</p>
-                            </div>
-                             <div class="skill-item">
-                                <img src="img/excel.jpeg" alt="excel"/>
-                                <p>Excel</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="img/gitandgithun.png" alt="git&github"/>
-                                <p>Git&Github</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="img/sql.png" alt="sql"/>
-                                <p>Sql</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="img/mysql.png" alt="MySql"/>
-                                <p>MySql</p>
-                            </div>
-                        </div>            
-                    </div>  
-                    <div style="background-color: rgb(207, 207, 207);padding: 2%;width: 49%; ;">
-                        <h2 style="font-size: 26px;font-weight: bold;margin-bottom: 20px;">Certification's</h2>
-                        <div class="certification" >
-                            <div class="certification-item">
-                                <p>Udemy Python & Flask Framework</p><a class="proof" href="img/flask.pdf">proof</a>
-                            </div>
-                            <div class="certification-item">
-                                <p>Udemy Microsoft Excel & Powerpoint</p><a class="proof" href="img/excel.pdf">proof</a>
-                            </div>
+        <section id="skills"  >
+            <h2 class="headdining">Skills</h2>   
+            <div class="container" style="gap: 4%;">
+                <div class="skills-grid aboutdiv" >
+                    <div class="skill-item">
+                        <img src="img/python.jpeg" alt="python"/>
+                        <p>python</p>
+                    </div>
+                    <div class="skill-item">                                
+                        <img src="img/flask.png" alt="Flask"/>
+                        <p>Flask</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/java.png" alt="java"/>
+                        <p>java</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/react.png" alt="Reactjs"/>
+                        <p>Reactjs</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/cpp.png" alt="c++"/>
+                        <p>c++</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/html.png" alt="Html"/>
+                        <p>Html</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/javascript.png" alt="JS"/>
+                        <p>JS</p>
+                    </div>
+                     <div class="skill-item">
+                        <img src="img/css.png" alt="css"/>
+                        <p>css</p>                        
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/excel.jpeg" alt="excel"/>
+                        <p>Excel</p>                        
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/gitandgithun.png" alt="git&github"/>                            
+                        <p>Git&Github</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/sql.png" alt="sql"/>                            
+                        <p>Sql</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/mysql.png" alt="MySql"/>
+                        <p>MySql</p>
+                    </div>
+                </div>
+                <div class="aboutdiv" style="background-color: rgb(207, 207, 207);padding: 4%;">
+                    <h2 style="font-size: 1.5rem;font-weight: bold;margin-bottom: 4%;">Certification's</h2>
+                    <div class="certification" >
+                        <div class="certification-item">
+                            <p>Udemy Python & Flask Framework</p><a class="proof" href="img/flask.pdf" target="_blank">proof</a>
                         </div>
-                        <h2 style="font-size: 26px;font-weight: bold;margin-bottom: 20px;">Work Shops</h2>
-                        <div class="certification">
-                            <div class="certification-item">
-                                <p>Automation in IT-(cresent --28/08/24)</p><a class="proof" href="Sivinash N.pdf">proof</a>
-                            </div>
-                        </div>
-                        <h2 style="font-size: 26px;font-weight: bold;margin-bottom: 20px;">Intenship</h2>
-                        <div class="certification">
-                            <div class="certification-item">
-                                <p>Full Stack Web Development-(1 month at 8Queens)</p><a  class="proof" href="img/intenship.jpg.pdf">proof</a>
-                            </div>
+                        <div class="certification-item">
+                            <p>Udemy Microsoft Excel & Powerpoint</p><a class="proof" href="img/excel.pdf" target="_blank">proof</a>
                         </div>
                     </div>
-                </div>     
+                    <h2 style="font-size: 1.5rem;font-weight: bold;margin-bottom: 4%;">Work Shops</h2>
+                    <div class="certification">
+                        <div class="certification-item">
+                            <p>Automation in IT-(cresent --28/08/24)</p><a class="proof" href="Sivinash N.pdf"  target="_blank">proof</a>
+                        </div>
+                    </div>
+                    <h2 style="font-size: 1.5rem;font-weight: bold;margin-bottom: 4%;">Intenship</h2>
+                    <div class="certification">
+                        <div class="certification-item">
+                             <p>Full Stack Web Development-(1 month at 8Queens)</p><a  class="proof" href="img/intenship.jpg.pdf" target="_blank">proof</a>
+                        </div>
+                    </div>
+                </div>   
             </div>
         </section>
-        <section id="projects" class="homesection2" >
-            <div class="container2" style="display: block;">
-                <h1>Project's</h1>
-                <div class="projectdiv" >
-                    <div class="singleproject">
-                       <video controls autoplay><source src="img/Alpha/videoAdmin.mp4"></video>
-                       <div class="singleprojectdiv"><p><b>Alpha Electronics</b></p><p style="font-size: smaller;">(Admin portal) | <a class="proof" href="https://github.com/sivinash/Alpha-Admin-portal.git">source_code</a></p></div>
-                       <div class="singleprojectdiv">
+        <section id="projects" >
+            <h2 class="headdining">Project's</h2>
+            <div class="containergrid">
+                <div class="singleproject">
+                    <video controls autoplay loop><source src="img/Alpha/videoAdmin.mp4"></video>
+                    <div class="singleprojectdiv"><p style="font-size: 1.1rem;"><b>1.Alpha Electronics</b></p><p style="font-size: smaller;">(Admin portal) | <a class="proof" href="https://github.com/sivinash/Alpha-Admin-portal.git" target="_blank">source_code</a></p></div>
+                    <div class="singleprojectdiv">
                         <p style="color: rgb(82, 80, 80);margin-bottom: 4%;line-height: 1.8;">The Admin Portal is developed as a <b>Flask application</b>, which serves as the backend server for both<mark> the Admin and Client Portals</mark>.<br> 
                             Flask is a lightweight web framework for Python, making it easy to set up and manage server-side logic and Used <b>Mysql</b> for Database management.<br>
                             The Admin Portal provides administrative functionalities, allowing administrators to manage users, oversee client activities, and perform various administrative tasks.
                         </p>
-                        </div>
-                    </div>
-                    <div class="singleproject">
-                       <video controls autoplay><source src="img/Alpha/Alpa user portal.webm"></video>
-                       <div class="singleprojectdiv"><p><b>Alpha Electronics</b></p><p style="font-size: smaller;">(Client portal) | <a class="proof" href="https://github.com/sivinash/Alpha-client-portal.git">source_code</a></p></div>
-                       <div class="singleprojectdiv" style="display: block;">
+                   </div>
+                </div>
+                <div class="singleproject">
+                    <video controls autoplay loop><source src="img/Alpha/Alpa user portal.webm"></video>
+                    <div class="singleprojectdiv"><p style="font-size: 1.1rem;"><b>2.Alpha Electronics</b></p><p style="font-size: smaller;">(Client portal) | <a class="proof" href="https://github.com/sivinash/Alpha-client-portal.git" target="_blank">source_code</a></p></div>
+                    <div class="singleprojectdiv" style="display: block;">
                         <p style="color: rgb(83, 80, 80);margin-bottom: 1%;line-height: 1.8;">This part of the application is built using <b>React.js</b>, A popular  JavaScript library for building user interfaces. </p>
                         <p style="color: rgb(83, 80, 80);margin-bottom: 1%;line-height: 1.8;"> The Client Portal allows users to interact with the application, providing a responsive and dynamic experience. </p>
                         <p style="color: rgb(83, 80, 80);margin-bottom: 1%;line-height: 1.8;">It is designed to facilitate user engagement and streamline client-related tasks.</p>
-                       </div>  
-                    </div>
-                    <div class="singleproject">
-                        <img id="turf" src=""/>
-                        <div class="singleprojectdiv"><p><b>Turf_booking</b></p><p style="font-size: smaller;">(Acadamic) | <a class="proof" href="https://github.com/sivinash/turf_booking_using_flask">source_code</a></p></div>
-                        <p style="color: rgb(82, 80, 80);margin-bottom: 4%;line-height: 1.8;">The turf_booking is developed as a <b> Flask Application</b>.
+                    </div>  
+                </div>
+                <div class="singleproject">
+                    <img id="turf" src="" height="320rem">
+                    <div class="singleprojectdiv"><p style="font-size: 1.1rem;"><b>3.Turf_booking</b></p><p style="font-size: smaller;">(Acadamic) | <a class="proof" href="https://github.com/sivinash/turf_booking_using_flask" target="_blank">source_code</a></p></div>
+                        <p style="color: rgb(82, 80, 80);margin-bottom: 4%;line-height: 1.8;">The Turf_booking is developed as a <b> Flask Application</b>.
                         <br>which has two mode of regeistration first as a user another as turf owner and we use <b>Mysql</b> for database management.User registration have access to book number of slots.
                         The manager registration have ability Add turf ,manage booking , manage slots all Administrtion functionalities provided</p>
-                    </div>
-                    <div class="singleproject">
-                        <img id="registration" src=""/>
-                        <div class="singleprojectdiv"><p><b>Data_collection_form</b></p><p style="font-size: smaller;">(Data collection) | <a class="proof" href="https://github.com/sivinash/registration_form_using_flask">source_code</a></p></div>
+                    
+                </div>
+                <div class="singleproject">
+                    <img id="registration" src=""/>
+                    <div class="singleprojectdiv"><p style="font-size: 1.1rem;"><b>4.Data_collection_form</b></p><p style="font-size: smaller;">(Data collection) | <a class="proof" href="https://github.com/sivinash/registration_form_using_flask" target="_blank">source_code</a></p></div>
+                    <div class="singleprojectdiv" style="display: block;">
                         <p style="color: rgb(82, 80, 80);margin-bottom: 4%;line-height: 1.8;">The Data_collection_formis developed as a <b> Flask Application</b>.
                         <br>which use to collect regeistrating  user information  and store in <b>sqlite</b> inbuild python  database.And the regeistrated user data display as table</p>
-             
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer id="Contact"  class="homesection2" style="background-color:#001D39;color: white;margin-top: 0px;padding-top: 10px;padding-bottom: 70px;" >
-        <div class="container2" style="display: block;text-align: center;align-items: center;">
-            <h1>Contact Details</h1>
+    <footer id="Contact" style="background-color:#001D39;color: white ;" >
+        <div style="text-align: center;">
+            <h1 style="margin-bottom: 4%;">Contact Details</h1>
             <div class="contact-item">
                 <span class="contact-icon">📞</span>
                 <h3>Phone Number</h3>
@@ -425,7 +555,6 @@
                 <span class="contact-icon">👔</span>
                 <h3>LinkedIn</h3>
                 <p class="cp"><a href="https://www.linkedin.com/in/sivinash-n-b0a643362/">Sivinash N</a></p>
-                </div>
             </div>
         </div>
     </footer>

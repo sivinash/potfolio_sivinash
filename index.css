@@ -1,0 +1,202 @@
+body{
+            background-color:white;
+            padding: 0px;
+            margin: 0px;
+            overflow-y: scroll;
+            scrollbar-width: 0px;
+        }
+        .navigation{
+            position: fixed;
+            background-color:#001D39;
+            color: white;
+            width: 100%;
+            font-size: 20px;
+        }
+        .navigation a{
+            color: white;
+            text-decoration: none;
+            font-style: normal;
+            width: 80px;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .navigation a:hover{
+            color:black;
+            font-size: 30px;
+            width: 100px;
+            padding: 0px;
+            text-shadow: -1px -1px 0 whitesmoke,1px -1px 0 whitesmoke,-1px 1px 0 whitesmoke,1px 1px 0 whitesmoke;
+        }
+        .container{
+            margin: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;          
+        }
+        .homesection{
+            padding-top:150px;
+            color: white;
+            background-color:#001D39;
+            margin-bottom: 60px;
+        }
+        .homesection2{
+            padding-top: 120px;
+            padding-bottom: 22px;
+            color: rgb(0, 0, 0);
+        }
+        .container2{
+            margin-left:50px;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .skills-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+            gap: 30px;
+            padding: 2rem 0;
+        }
+        .projectdiv{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(40%,1fr));
+            gap: 20px;
+            padding-left: 40px;
+            
+        }
+       .singleproject{
+            background-color: rgb(237, 229, 245);
+            padding: 10px;
+            font-size: 15px;
+            width: 80%;
+            height: 600px;
+            padding-bottom: 20px;
+            border-radius: 25px;
+       }
+        .singleprojectdiv{
+            display: flex;
+            justify-content: space-between;
+            width:90%;
+            border-radius: 25px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .singleproject img{
+            width: 100%;
+            height: 60%;
+            border-radius: 25px;
+        }
+        .singleproject video{
+            width: 100%;
+            height: 50%;
+            border-radius: 25px;
+        }
+        .skill-item{
+            text-align: center;
+        }
+        .skill-item img{
+            width: 60px;
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+        .skill-item img:hover{
+            transform: scale(1.2);
+        }
+        .skill-item p{
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        .fade-in{
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn{
+            from{
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .certification{
+            padding-left: 30px;
+            padding-right: 20px;
+            border-left: thick solid rgb(214, 9, 214)
+        }
+        .certification-item{
+            display: flex;
+            justify-content: space-between;
+        }
+        .certification-item button{
+            border: none;
+            background-color: transparent;
+        }
+        .contact-item {
+            width:70%;
+            margin-left: 22%;
+            display: flex;
+            font-size:25px;
+            color: whitesmoke;
+            justify-content: left;
+            gap: 40px;
+            align-items: left;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .contact-item h3{
+            width: 300px;
+            text-align: left;
+        }
+        
+        .contact-icon {
+            padding: 10px;
+            font-size: 24px;
+            color: #4facfe;
+            min-width: 50px;
+        }
+        #contbutton{
+            padding: 20px;
+            background-color: white; 
+            color:rgb(14, 1, 14);
+            font-weight: bold; 
+            border-radius: 14px;
+            text-decoration: none;
+        }
+        #contbutton:hover{
+            background-color: transparent;
+            color:white;
+            box-shadow: 0px 0px  2px 2px white;
+        }
+        #download{
+            padding: 20px;
+            background-color: transparent; 
+            color:white;
+            font-weight: bold; 
+            border-radius: 14px;
+            box-shadow: 0px 0px  2px 2px white;
+            text-decoration: none;
+        }
+        #download:hover{
+            background-color: white;
+            color:rgb(0, 0, 0);
+        }
+        .proof{
+            color: red;
+
+        }
+        .proof:hover{
+            color: rgb(0, 0, 0);
+            text-shadow: -1px -1px 0 whitesmoke,1px -1px 0 whitesmoke,-1px 1px 0 whitesmoke,1px 1px 0 whitesmoke;
+      
+        }
+        .cp{
+            text-decoration: underline;
+        }
+        .cp a {
+            color:white;
+            
+        }
+        .cp a:hover{
+            color:red;
+            }
