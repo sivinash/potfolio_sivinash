@@ -245,7 +245,9 @@ footer {
     padding: 2%;
     background-color: #001d39;
   }
-
+  .a{
+    color: white;
+  }
   nav {
     display: flex;
     width: 80%;
