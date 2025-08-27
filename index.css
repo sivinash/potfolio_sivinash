@@ -269,7 +269,7 @@ footer {
   }
   header h1 {
     color: white;
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     width: auto;
   }
   .headdining1 {
@@ -292,10 +292,16 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    gap: 10%;
+    gap: 5%;
+  }
+  .a{
+    color : white;
+  }
+  .a:hover{
+    color: red;
   }
   .homecontainerimg {
-    width: 35%;
+    width: 34%;
   }
   .homecontainerimg img {
     display: block;
@@ -306,7 +312,7 @@ footer {
     object-fit: cover;
   }
   .homecontainerself {
-    width: 65%;
+    width: 69%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -319,7 +325,7 @@ footer {
     margin-bottom: 0.6%;
   }
   .homecontainerself h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: bold;
     margin-bottom: 3%;
   }
